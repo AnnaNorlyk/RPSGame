@@ -1,4 +1,4 @@
-import { CookieHandler } from "./CookieHandler"; 
+import { CookieHandler } from "./CookieHandler.js"; 
 
 export class PlayerCookieHandler extends CookieHandler {
   // Processes the player cookie logic

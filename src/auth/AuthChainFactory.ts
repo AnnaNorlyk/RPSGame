@@ -1,7 +1,8 @@
-import { PlayerCookieHandler } from "./PlayerCookieHandler";
-import { ScoreCookieHandler } from "./ScoreCookieHandler";
-import { AuthChainType } from "../enums/AuthChainType";
-import { CookieHandler } from "./CookieHandler"; // Import the abstract base class
+import { PlayerCookieHandler } from "./PlayerCookieHandler.js";
+import { ScoreCookieHandler } from "./ScoreCookieHandler.js";
+import { AuthChainType } from "../enums/AuthChainType.js";
+import { CookieHandler } from "./CookieHandler.js";
+
 
 export class AuthChainFactory {
   // Creates an authentication chain handler based on the type given

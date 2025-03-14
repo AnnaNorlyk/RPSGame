@@ -2,7 +2,7 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import cors from "cors";
-import cookieRoutes from "./routes/CookieRoutes";
+import cookieRoutes from "./routes/CookieRoutes.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;

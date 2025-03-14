@@ -1,4 +1,4 @@
-import { CookieHandler } from "./CookieHandler";
+import { CookieHandler } from "./CookieHandler.js";
 
 export class ScoreCookieHandler extends CookieHandler {
   // Processes the score cookie logic

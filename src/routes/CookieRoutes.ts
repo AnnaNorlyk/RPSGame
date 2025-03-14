@@ -2,13 +2,13 @@ import { Router } from "express";
 
 const router = Router();
 
-// ✅ Route to set a test cookie
+//Route to set a test cookie
 router.get("/set-cookie", (req, res) => {
   res.cookie("testCookie", "cookieValue123", { httpOnly: true });
   res.json({ message: "Cookie has been set!" });
 });
 
-// ✅ Route to check if the test cookie is received
+//Route to check if the test cookie is received
 router.get("/get-cookie", (req, res) => {
   const cookie = req.cookies.testCookie;
   if (cookie) {
