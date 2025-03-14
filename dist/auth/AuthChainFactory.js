@@ -1,6 +1,6 @@
 import { PlayerCookieHandler } from "./PlayerCookieHandler.js";
 import { ScoreCookieHandler } from "./ScoreCookieHandler.js";
-import { AuthChainType } from "../enums/AuthChainType.js";
+import { AuthChainType } from "../models/enums/AuthChainType.js";
 export class AuthChainFactory {
     // Creates an authentication chain handler based on the type given
     static create(type) {

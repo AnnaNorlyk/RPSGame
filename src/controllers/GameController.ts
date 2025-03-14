@@ -10,7 +10,7 @@ function _getAuthToken(req: Request): string {
   return req.cookies.playerToken || "default";
 }
 
-// Validates if the given hand is a valid choice (rps))
+// Validates if the given hand is a valid choice (rps)
 function _validateHand(handParam?: string): Hand | null {
   if (!handParam) return null;
   const upperHand = handParam.toUpperCase();
@@ -19,6 +19,7 @@ function _validateHand(handParam?: string): Hand | null {
 
 // Starts a new game for the player
 export function startGame(req: Request, res: Response): void {
+    console.log("startGame endpoint hit"); // TEMP LOG
   const authToken = _getAuthToken(req);
   const status = gameService.startGame(authToken);
   res.json({ message: "Game started!", status });

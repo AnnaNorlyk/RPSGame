@@ -2,7 +2,8 @@ export class CookieHandler {
     nextHandler;
     // Sets the next handler in the chain
     setNext(handler) {
-        return (this.nextHandler = handler);
+        this.nextHandler = handler;
+        return handler;
     }
     // Handles the request and passes it to the next handler if set
     handle(req, res) {

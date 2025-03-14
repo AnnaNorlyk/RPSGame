@@ -6,3 +6,4 @@
 <p> 2: npm run build (for at compile) </p>
 <p> 3: npm run start (for at launche serveren - kører på port 3000) </p>
  
+npm install express cookie-parser morgan cors
