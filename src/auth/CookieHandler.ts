@@ -1,9 +1,13 @@
-export abstract class CookieHandler {
-    protected nextHandler?: CookieHandler;
+import { ICookieHandler } from "../interfaces/ICookieHandler.js";
+
+export abstract class CookieHandler implements ICookieHandler {
+  protected nextHandler?: ICookieHandler;
+
   
     // Sets the next handler in the chain
-    public setNext(handler: CookieHandler): CookieHandler {
-      return (this.nextHandler = handler);
+    public setNext(handler: ICookieHandler): ICookieHandler {
+      this.nextHandler = handler;
+      return handler;
     }
   
     // Handles the request and passes it to the next handler if set

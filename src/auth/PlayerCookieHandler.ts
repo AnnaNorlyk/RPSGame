@@ -1,6 +1,7 @@
+import { ICookieHandler } from "../interfaces/ICookieHandler.js";
 import { CookieHandler } from "./CookieHandler.js"; 
 
-export class PlayerCookieHandler extends CookieHandler {
+export class PlayerCookieHandler extends CookieHandler implements ICookieHandler {
   // Processes the player cookie logic
   protected process(req: any, res: any): void {
     // Check if the player token cookie is missing

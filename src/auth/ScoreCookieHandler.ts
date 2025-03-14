@@ -1,6 +1,7 @@
+import { ICookieHandler } from "../interfaces/ICookieHandler.js";
 import { CookieHandler } from "./CookieHandler.js";
 
-export class ScoreCookieHandler extends CookieHandler {
+export class ScoreCookieHandler extends CookieHandler implements ICookieHandler {
   // Processes the score cookie logic
   protected process(req: any, res: any): void {
     if (!req.cookies?.scoreToken) {
