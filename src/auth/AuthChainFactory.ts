@@ -1,7 +1,7 @@
 import { ICookieHandler } from "../interfaces/ICookieHandler.js";
 import { PlayerCookieHandler } from "./PlayerCookieHandler.js";
 import { ScoreCookieHandler } from "./ScoreCookieHandler.js";
-import { AuthChainType } from "../enums/AuthChainType.js";
+import { AuthChainType } from "../models/enums/AuthChainType.js";
 import { CookieHandler } from "./CookieHandler.js";
 
 
